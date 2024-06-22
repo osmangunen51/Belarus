@@ -1,0 +1,14 @@
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\bin\Debug\BELARUS.Lib.dll.config
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\bin\Debug\BELARUS.Lib.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\bin\Debug\BELARUS.Lib.pdb
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\bin\Debug\EntityFramework.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\bin\Debug\EntityFramework.xml
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\obj\Debug\BELARUS.Lib.csproj.AssemblyReference.cache
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\obj\Debug\BELARUS.Lib.csproj.CoreCompileInputs.cache
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\obj\Debug\BELARUS.Lib.csproj.CopyComplete
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\obj\Debug\BELARUS.Lib.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\Lib\obj\Debug\BELARUS.Lib.pdb

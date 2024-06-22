@@ -1,0 +1,14 @@
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\bin\Debug\HttpClient.dll.config
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\bin\Debug\HttpClient.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\bin\Debug\HttpClient.pdb
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\bin\Debug\EntityFramework.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\bin\Debug\EntityFramework.xml
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\obj\Debug\HttpClient.csproj.AssemblyReference.cache
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\obj\Debug\HttpClient.csproj.CoreCompileInputs.cache
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\obj\Debug\HttpClient.csproj.CopyComplete
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\obj\Debug\HttpClient.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\HttpClient\obj\Debug\HttpClient.pdb

@@ -1,0 +1,12 @@
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\TabStrip\bin\Debug\BELARUS.TabStrip.dll.config
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\TabStrip\bin\Debug\BELARUS.TabStrip.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\TabStrip\bin\Debug\BELARUS.TabStrip.pdb
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\TabStrip\bin\Debug\EntityFramework.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\TabStrip\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\TabStrip\bin\Debug\EntityFramework.xml
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\TabStrip\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\TabStrip\obj\Debug\BELARUS.TabStrip.csproj.AssemblyReference.cache
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\TabStrip\obj\Debug\BELARUS.TabStrip.csproj.CoreCompileInputs.cache
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\TabStrip\obj\Debug\BELARUS.TabStrip.csproj.CopyComplete
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\TabStrip\obj\Debug\BELARUS.TabStrip.dll
+C:\Users\Tuanna\source\repos\Belarus\BELARUS\Windows\Library\TabStrip\obj\Debug\BELARUS.TabStrip.pdb

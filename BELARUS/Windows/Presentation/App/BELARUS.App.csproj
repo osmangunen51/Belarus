@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+	<LangVersion>latest</LangVersion>
+	<Nullable>enable</Nullable>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17FB830F-749B-4182-997A-943090F60C73}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BELARUS.App</RootNamespace>
+    <AssemblyName>BELARUS.App</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>%24/Satbis/Tools/ZebraKimlikSistemi/App</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://selimerman.visualstudio.com</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <PublishUrl>C:\Publish\App\Zebra\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://personelportal.ykk.gov.tr/Setup/App/Zebra/</InstallUrl>
+    <UpdateUrl>http://personelportal.ykk.gov.tr/Setup/App/Zebra/</UpdateUrl>
+    <SupportUrl>http://personelportal.ykk.gov.tr/Setup/App/Zebra/yardim.html</SupportUrl>
+    <ErrorReportUrl>http://personelportal.ykk.gov.tr/Setup/App/Zebra/hata.html</ErrorReportUrl>
+    <ProductName>Kimlik Basım Sistemi</ProductName>
+    <PublisherName>ykk.gov.tr</PublisherName>
+    <SuiteName>KimlikBasimSistemi</SuiteName>
+    <MinimumRequiredVersion>1.0.0.1</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.html</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>ECDA2311C6220B567AD495EEDC98AEBF1BFFD72A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>KargoEnginer.App_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.IO.Packaging.5.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ekranlar\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekranlar\BaseForm.designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekranlar\FrmSHManuel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekranlar\FrmSHManuel.designer.cs">
+      <DependentUpon>FrmSHManuel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekranlar\FrmResimOnIzleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekranlar\FrmResimOnIzleme.Designer.cs">
+      <DependentUpon>FrmResimOnIzleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekranlar\FrmAyar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekranlar\FrmAyar.designer.cs">
+      <DependentUpon>FrmAyar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekranlar\FrmIslemYapiliyor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekranlar\FrmIslemYapiliyor.Designer.cs">
+      <DependentUpon>FrmIslemYapiliyor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ellipse.cs" />
+    <Compile Include="Enum.cs" />
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Icons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="IslemDurum.cs" />
+    <Compile Include="LogItem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ekranlar\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekranlar\FrmSHManuel.resx">
+      <DependentUpon>FrmSHManuel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekranlar\FrmResimOnIzleme.resx">
+      <DependentUpon>FrmResimOnIzleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekranlar\FrmAyar.resx">
+      <DependentUpon>FrmAyar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekranlar\FrmIslemYapiliyor.resx">
+      <DependentUpon>FrmIslemYapiliyor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Icons.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <None Include="Resources\Uyari.wav" />
+    <Content Include="Uyari.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\SQLite.Interop.dll" />
+    <Content Include="x86\SQLite.Interop.dll" />
+    <None Include="Resources\Yeni1.png" />
+    <None Include="Resources\Yeni.png" />
+    <None Include="Resources\076-resize.png" />
+    <None Include="Resources\077-repeat.png" />
+    <None Include="Resources\078-add.png" />
+    <None Include="Resources\079-shuffle.png" />
+    <None Include="Resources\080-edit.png" />
+    <None Include="Resources\081-share.png" />
+    <None Include="Resources\082-photo-camera.png" />
+    <None Include="Resources\083-password.png" />
+    <None Include="Resources\084-filter.png" />
+    <None Include="Resources\085-magnifying-glass.png" />
+    <None Include="Resources\086-send.png" />
+    <None Include="Resources\087-pin.png" />
+    <None Include="Resources\088-check.png" />
+    <None Include="Resources\089-video-camera.png" />
+    <None Include="Resources\090-size.png" />
+    <None Include="Resources\091-notification.png" />
+    <None Include="Resources\092-right-arrow.png" />
+    <None Include="Resources\093-empty-battery.png" />
+    <None Include="Resources\094-back.png" />
+    <None Include="Resources\095-full-battery.png" />
+    <None Include="Resources\096-close.png" />
+    <None Include="Resources\097-mail.png" />
+    <None Include="Resources\098-menu.png" />
+    <None Include="Resources\099-power.png" />
+    <None Include="Resources\100-bar-chart.png" />
+    <None Include="Resources\005-shopping-cart.png" />
+    <None Include="Resources\005-up-arrow.png" />
+    <None Include="Resources\006-calendar.png" />
+    <None Include="Resources\006-plugin.png" />
+    <None Include="Resources\006-share.png" />
+    <None Include="Resources\006-shopping-basket.png" />
+    <None Include="Resources\007-edit.png" />
+    <None Include="Resources\007-search.png" />
+    <None Include="Resources\007-shopping-bag.png" />
+    <None Include="Resources\007-switch-1.png" />
+    <None Include="Resources\008-alarm.png" />
+    <None Include="Resources\008-barcode.png" />
+    <None Include="Resources\008-folder.png" />
+    <None Include="Resources\008-forbbiden.png" />
+    <None Include="Resources\009-barcode-1.png" />
+    <None Include="Resources\009-chat.png" />
+    <None Include="Resources\009-shop.png" />
+    <None Include="Resources\009-switch.png" />
+    <None Include="Resources\010-credit-card-1.png" />
+    <None Include="Resources\010-email.png" />
+    <None Include="Resources\010-push-pin.png" />
+    <None Include="Resources\010-stopwatch.png" />
+    <None Include="Resources\010-stopwatch1.png" />
+    <None Include="Resources\011-bluetooth.png" />
+    <None Include="Resources\011-browser.png" />
+    <None Include="Resources\011-compass.png" />
+    <None Include="Resources\011-shopping-cart-1.png" />
+    <None Include="Resources\012-credit-card-2.png" />
+    <None Include="Resources\012-pause.png" />
+    <None Include="Resources\012-refresh.png" />
+    <None Include="Resources\012-volume.png" />
+    <None Include="Resources\013-bitcoin.png" />
+    <None Include="Resources\013-mute.png" />
+    <None Include="Resources\013-purse.png" />
+    <None Include="Resources\013-typing.png" />
+    <None Include="Resources\014-fast-delivery.png" />
+    <None Include="Resources\014-smartphone.png" />
+    <None Include="Resources\014-stop.png" />
+    <None Include="Resources\014-usb.png" />
+    <None Include="Resources\015-bookmark.png" />
+    <None Include="Resources\015-folder.png" />
+    <None Include="Resources\015-price-tag.png" />
+    <None Include="Resources\015-rating.png" />
+    <None Include="Resources\016-attachment.png" />
+    <None Include="Resources\016-credit-card-3.png" />
+    <None Include="Resources\016-store.png" />
+    <None Include="Resources\016-user.png" />
+    <None Include="Resources\017-dollar.png" />
+    <None Include="Resources\017-followers.png" />
+    <None Include="Resources\017-headphones.png" />
+    <None Include="Resources\017-settings.png" />
+    <None Include="Resources\018-cash.png" />
+    <None Include="Resources\018-cash-back.png" />
+    <None Include="Resources\018-check.png" />
+    <None Include="Resources\018-file.png" />
+    <None Include="Resources\019-audio.png" />
+    <None Include="Resources\019-pie-chart.png" />
+    <None Include="Resources\019-shopping-cart-2.png" />
+    <None Include="Resources\019-transaction.png" />
+    <None Include="Resources\020-chat.png" />
+    <None Include="Resources\020-diagram.png" />
+    <None Include="Resources\020-levels.png" />
+    <None Include="Resources\020-price-tag-1.png" />
+    <None Include="Resources\021-open-lock.png" />
+    <None Include="Resources\021-slide.png" />
+    <None Include="Resources\021-swiss-franc.png" />
+    <None Include="Resources\021-usb.png" />
+    <None Include="Resources\022-color-pencils.png" />
+    <None Include="Resources\022-currency.png" />
+    <None Include="Resources\022-cut.png" />
+    <None Include="Resources\022-medal.png" />
+    <None Include="Resources\023-calculator.png" />
+    <None Include="Resources\023-download.png" />
+    <None Include="Resources\023-refresh-2.png" />
+    <None Include="Resources\023-tax.png" />
+    <None Include="Resources\024-dollar-1.png" />
+    <None Include="Resources\024-erase.png" />
+    <None Include="Resources\024-pencil.png" />
+    <None Include="Resources\024-upload.png" />
+    <None Include="Resources\025-folders.png" />
+    <None Include="Resources\025-headset.png" />
+    <None Include="Resources\025-layout.png" />
+    <None Include="Resources\025-type.png" />
+    <None Include="Resources\026-finish.png" />
+    <None Include="Resources\026-refresh-1.png" />
+    <None Include="Resources\027-settings-1.png" />
+    <None Include="Resources\028-minimize.png" />
+    <None Include="Resources\029-tag.png" />
+    <None Include="Resources\030-reduce.png" />
+    <None Include="Resources\031-refresh.png" />
+    <None Include="Resources\032-expand.png" />
+    <None Include="Resources\033-rate.png" />
+    <None Include="Resources\034-microphone.png" />
+    <None Include="Resources\035-compass.png" />
+    <None Include="Resources\036-brightness.png" />
+    <None Include="Resources\037-more.png" />
+    <None Include="Resources\038-padlock.png" />
+    <None Include="Resources\039-map.png" />
+    <None Include="Resources\040-bookmark.png" />
+    <None Include="Resources\041-magic-wand.png" />
+    <None Include="Resources\042-resize-1.png" />
+    <None Include="Resources\043-loading.png" />
+    <None Include="Resources\044-cloud-computing.png" />
+    <None Include="Resources\045-worldwide.png" />
+    <None Include="Resources\046-shield.png" />
+    <None Include="Resources\047-logout.png" />
+    <None Include="Resources\048-trash.png" />
+    <None Include="Resources\049-login.png" />
+    <None Include="Resources\050-chat.png" />
+    <None Include="Resources\051-information.png" />
+    <None Include="Resources\052-agenda.png" />
+    <None Include="Resources\053-send-1.png" />
+    <None Include="Resources\054-copy.png" />
+    <None Include="Resources\055-settings.png" />
+    <None Include="Resources\056-bluetooth.png" />
+    <None Include="Resources\057-switches.png" />
+    <None Include="Resources\058-heart.png" />
+    <None Include="Resources\059-tap.png" />
+    <None Include="Resources\060-list.png" />
+    <None Include="Resources\061-star.png" />
+    <None Include="Resources\062-cursor.png" />
+    <None Include="Resources\063-play.png" />
+    <None Include="Resources\064-night.png" />
+    <None Include="Resources\065-wifi.png" />
+    <None Include="Resources\066-upload.png" />
+    <None Include="Resources\067-link.png" />
+    <None Include="Resources\068-download.png" />
+    <None Include="Resources\069-printer.png" />
+    <None Include="Resources\070-home.png" />
+    <None Include="Resources\071-diskette.png" />
+    <None Include="Resources\072-arroba.png" />
+    <None Include="Resources\073-user.png" />
+    <None Include="Resources\074-image.png" />
+    <None Include="Resources\075-shopping-bag.png" />
+    <None Include="Resources\001-credit-card.bak.png" />
+    <None Include="Resources\001-credit-card.png" />
+    <None Include="Resources\001-padlock.png" />
+    <None Include="Resources\001-save.png" />
+    <None Include="Resources\001-view.png" />
+    <None Include="Resources\002-email.png" />
+    <None Include="Resources\002-invoice.png" />
+    <None Include="Resources\002-resize-2.png" />
+    <None Include="Resources\002-wall-clock.png" />
+    <None Include="Resources\003-edit.png" />
+    <None Include="Resources\003-hourglass.png" />
+    <None Include="Resources\003-invoice-1.png" />
+    <None Include="Resources\003-scroll.png" />
+    <None Include="Resources\004-box.png" />
+    <None Include="Resources\004-favourites.png" />
+    <None Include="Resources\004-favourites1.png" />
+    <None Include="Resources\004-menu.png" />
+    <None Include="Resources\004-menu-1.png" />
+    <None Include="Resources\005-mute.png" />
+    <None Include="Resources\005-power.png" />
+    <Content Include="Resources\Baslat.png" />
+    <None Include="Resources\Baslat1.png" />
+    <None Include="Resources\bg.jpg" />
+    <Content Include="Resources\Duraklat.png" />
+    <None Include="Resources\Duraklat1.png" />
+    <Content Include="Resources\Durdur.png" />
+    <None Include="Resources\Durdur1.png" />
+    <Content Include="Resources\DurumBilgi.png" />
+    <None Include="Resources\DurumBilgi1.png" />
+    <Content Include="Resources\excel.png" />
+    <None Include="Resources\IslemYapiliyor.gif" />
+    <None Include="Resources\excel1.png" />
+    <None Include="Resources\IslemYapiliyor1.gif" />
+    <Content Include="Resources\Kaydet.png" />
+    <None Include="Resources\Kaydet1.png" />
+    <None Include="Resources\PUYS.png" />
+    <Content Include="Resources\Temizle.png" />
+    <None Include="Resources\Temizle1.png" />
+    <None Include="Resources\Titck.png" />
+    <None Include="Resources\Versiyon.png" />
+    <None Include="Resources\Versiyon1.png" />
+    <None Include="Resources\xml.png" />
+    <None Include="Resources\xml1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Library\Data\BELARUS.Data.csproj">
+      <Project>{2dcffe3f-17a1-4184-8962-c7ca52d59d45}</Project>
+      <Name>BELARUS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\HttpClient\HttpClient.csproj">
+      <Project>{45912ed7-597c-4214-930d-cb44d17f6650}</Project>
+      <Name>HttpClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\Lib\BELARUS.Lib.csproj">
+      <Project>{e11b0acc-4832-4479-b7b7-5f68b6f6e0d6}</Project>
+      <Name>BELARUS.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\Service\BELARUS.Service.csproj">
+      <Project>{f27352f9-393c-46ca-ba29-b7be8d0d3dd7}</Project>
+      <Name>BELARUS.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\SH\BELARUS.SH.csproj">
+      <Project>{e0619dbf-4ea3-4b11-9c3c-c69e2c85daf0}</Project>
+      <Name>BELARUS.SH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\TabStrip\BELARUS.TabStrip.csproj">
+      <Project>{f929ca6a-87bd-42c8-8d0a-6455db6f55dc}</Project>
+      <Name>BELARUS.TabStrip</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
